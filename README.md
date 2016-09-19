@@ -27,6 +27,7 @@
 ## Comments
 
 * Use `//` insted of `/* */`, if you are using a CSS Preprocessor
+* Include one space after the `//`
 * Use comment section to explain what the class does
 
 ```scss
