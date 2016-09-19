@@ -24,3 +24,31 @@
 .inline-form-element{
 }
 ```
+
+## Prefix
+
+* For the best possible browser support, you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. Use the follow syntax:
+
+```css
+.selector {
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+```
+* If you are using a CSS Preprocessor create mixin for prefixing:
+
+```scss
+@mixin rotate-element($deg) {
+  -webkit-transform: rotate($deg);
+     -moz-transform: rotate($deg);
+      -ms-transform: rotate($deg);
+       -o-transform: rotate($deg);
+          transform: rotate($deg);
+}
+.selector { @include rotate-element(45deg); }
+```
+
+
