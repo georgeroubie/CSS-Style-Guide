@@ -40,8 +40,11 @@
 
 ```scss
 // Syntax Example
-.btn {
+.btn[type='submit'] {
   display: inline-block;
+  background-color: rgba(0,0,0,0.5);
+  padding: 0;
+  border: 0;
   color: #e0e0e0;
 }
 .btn-warning { color: #ff0000; }
