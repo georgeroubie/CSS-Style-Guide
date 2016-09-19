@@ -9,7 +9,7 @@
 * End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it
 * Single declarations on one line syntax: `.btn-warning { color:#ff0000; }`
 
-```css
+```scss
 // Syntax Example
 .btn {
   display: inline-block;
@@ -45,7 +45,7 @@
 
 * For the best possible browser support, you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. Use the follow syntax:
 
-```css
+```scss
 .selector {
   -webkit-transform: rotate(45deg);
      -moz-transform: rotate(45deg);
