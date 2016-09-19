@@ -33,6 +33,7 @@
 * Include one space after comma `,`.
 * Property declaration should appear on its own line for more accurate error reporting.
 * End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it.
+* Always start a new line for each selector.
 * In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing.
 * Try to use single `'` quotes instead of double quotes `"`.
 * Avoid specifying units for zero values, e.g., `padding: 0;` instead of `padding: 0px;`.
@@ -41,11 +42,15 @@
 
 ```scss
 // Syntax Example
+.btn,
+.btn.default {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 .btn[type='submit'] {
   display: inline-block;
   background-color: rgba(0,0,0,0.5);
-  padding: 0;
-  border: 0;
   color: #e0e0e0;
 }
 .btn-warning { color: #ff0000; }
