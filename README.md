@@ -4,15 +4,15 @@
 
 ## Naming
 
-* Name your CSS Classes and IDs based on what they are, not what they look like
-* Use hyphens for CSS Classes `.btn-warning`
-* Use underscores for CSS IDs `#top_menu`
+* Name your CSS Classes and IDs based on what they are, not what they look like.
+* Use hyphens for CSS Classes `.btn-warning`.
+* Use underscores for CSS IDs `#top_menu`.
 
 ## Comments
 
-* Use `//` insted of `/* */`, if you are using a CSS Preprocessor
-* Include one space after the `//`
-* Use comment section to explain what the class does
+* Use `//` insted of `/* */`, if you are using a CSS Preprocessor.
+* Include one space after the `//`.
+* Use comment section to explain what the class does.
 
 ```scss
 // BAD Example
@@ -28,10 +28,10 @@
 
 ## Syntax
 
-* Include one space before the opening brace `{` in rule declarations
-* Include one space after the colon `:` in property declarations
-* Property declaration should appear on its own line for more accurate error reporting
-* End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it
+* Include one space before the opening brace `{` in rule declarations.
+* Include one space after the colon `:` in property declarations.
+* Property declaration should appear on its own line for more accurate error reporting.
+* End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it.
 * In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing.
 
 ```scss
@@ -45,7 +45,7 @@
 
 ## Colors
 
-* Use hex color codes #000 instead of using rgb or name colors
+* Use hex color codes #000 instead of using rgb or name colors.
 * Lowercase all hex values, e.g., #fff. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
 * Use shorthand hex values where available, e.g., #fff instead of #ffffff.
 * Don't include spaces after commas within rgba(), hsla(), or rect() values.
