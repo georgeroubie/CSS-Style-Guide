@@ -31,7 +31,7 @@
 * Include one space after the colon `:` in property declarations
 * Property declaration should appear on its own line for more accurate error reporting
 * End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it
-* Single declarations on one line syntax: `.btn-warning { color: #ff0000; }`
+* In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing.
 
 ```scss
 // Syntax Example
