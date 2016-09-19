@@ -20,6 +20,12 @@
 // BAD Example
 /*inline form element*/
 .inline-form-element { display: inline-block; }
+.btn {
+  &:after {
+    /*Car Icon*/
+    content: '\u450';
+  }
+}
 
 // GOOD Example
 // inputs, buttons and text areas will be displayed in the same line
