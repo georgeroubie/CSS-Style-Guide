@@ -17,13 +17,11 @@
 ```scss
 // BAD Example
 /*inline form element*/
-.inline-form-element {
-}
+.inline-form-element { display: inline-block; }
 
 // GOOD Example
 // inputs, buttons and text areas will be displayed in the same line
-.inline-form-element {
-}
+.inline-form-element { display: inline-block; }
 ```
 
 ## Syntax
