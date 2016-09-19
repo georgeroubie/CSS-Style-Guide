@@ -1,4 +1,4 @@
-# CSS Style Guides
+# CSS Style Guide
 
 > This is the CSS Style Guide that I use, for my own apps.
 
