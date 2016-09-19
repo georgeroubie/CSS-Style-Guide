@@ -3,10 +3,11 @@
 > This is the CSS Style Guide that I use, for my own apps.
 
 ## Syntax
-* Include one space before the opening brace `{` in rule declarations.
-* Include one space after the colon `:` in property declarations.
-* Property declaration should appear on its own line for more accurate error reporting.
-* End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it.
+* Include one space before the opening brace `{` in rule declarations
+* Include one space after the colon `:` in property declarations
+* Property declaration should appear on its own line for more accurate error reporting
+* End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it
+* Single declarations on one line syntax: `.btn-warning { color:#ff0000; }`
 
 ## Naming
 
