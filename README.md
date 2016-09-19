@@ -38,7 +38,7 @@
           transform: rotate(45deg);
 }
 ```
-* If you are using a CSS Preprocessor create mixin for prefixing:
+* If you are using a CSS Preprocessor create a mixin for prefixing:
 
 ```scss
 @mixin rotate-element($deg) {
