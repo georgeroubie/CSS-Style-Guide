@@ -5,5 +5,9 @@
 ## Naming
 
 * Name your CSS Classes and IDs based on what they are, not what they look like
-* Use hyphens for CSS Classes (.btn-warning)
-* Use underscores for CSS IDs (#top_menu)
+* Use hyphens for CSS Classes `.btn-warning`
+* Use underscores for CSS IDs `#top_menu`
+
+## Comments
+
+* Use `//` insted of `/* */`
