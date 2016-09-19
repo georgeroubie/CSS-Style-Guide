@@ -2,22 +2,6 @@
 
 > This is the CSS Style Guide that I use, for my own apps.
 
-## Syntax
-* Include one space before the opening brace `{` in rule declarations
-* Include one space after the colon `:` in property declarations
-* Property declaration should appear on its own line for more accurate error reporting
-* End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it
-* Single declarations on one line syntax: `.btn-warning { color:#ff0000; }`
-
-```scss
-// Syntax Example
-.btn {
-  display: inline-block;
-  color: #e0e0e0;
-}
-.btn-warning { color:#ff0000; }
-```
-
 ## Naming
 
 * Name your CSS Classes and IDs based on what they are, not what they look like
@@ -40,6 +24,22 @@
 // inputs, buttons and text areas will be displayed in the same line
 .inline-form-element {
 }
+```
+
+## Syntax
+* Include one space before the opening brace `{` in rule declarations
+* Include one space after the colon `:` in property declarations
+* Property declaration should appear on its own line for more accurate error reporting
+* End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it
+* Single declarations on one line syntax: `.btn-warning { color:#ff0000; }`
+
+```scss
+// Syntax Example
+.btn {
+  display: inline-block;
+  color: #e0e0e0;
+}
+.btn-warning { color:#ff0000; }
 ```
 
 ## Prefix
