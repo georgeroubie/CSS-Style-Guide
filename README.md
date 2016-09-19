@@ -13,6 +13,7 @@
 * Use `//` insted of `/* */`, if you are using a CSS Preprocessor.
 * Include one space after the `//`.
 * Use comment section to explain what the class does.
+* Comments should always follow by a new line.
 
 ```scss
 // BAD Example
@@ -21,6 +22,7 @@
 
 // GOOD Example
 // inputs, buttons and text areas will be displayed in the same line
+
 .inline-form-element { display: inline-block; }
 ```
 
@@ -40,6 +42,7 @@
 
 ```scss
 // Syntax Example
+
 .btn,
 .btn.default {
   margin: 0;
@@ -63,6 +66,7 @@
 
 ```scss
 // BAD Example
+
 .btn-warning {
   color: red;
   border-color: #FFFFFF;
@@ -70,6 +74,7 @@
 }
 
 // GOOD Example
+
 .btn-warning {
   color: #ff0000;
   border-color: #fff;
@@ -83,6 +88,7 @@
 
 ```scss
 // Example
+
 .selector {
   -webkit-transform: rotate(45deg);
      -moz-transform: rotate(45deg);
