@@ -27,6 +27,7 @@
 ```
 
 ## Syntax
+
 * Include one space before the opening brace `{` in rule declarations
 * Include one space after the colon `:` in property declarations
 * Property declaration should appear on its own line for more accurate error reporting
@@ -40,6 +41,29 @@
   color: #e0e0e0;
 }
 .btn-warning { color: #ff0000; }
+```
+
+## Colors
+
+* Use hex color codes #000 instead of using rgb or name colors
+* Lowercase all hex values, e.g., #fff. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
+* Use shorthand hex values where available, e.g., #fff instead of #ffffff.
+* Don't include spaces after commas within rgba(), hsla(), or rect() values.
+
+```scss
+// BAD Example
+.btn-warning {
+  color: red;
+  border-color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+// GOOD Example
+.btn-warning {
+  color: #ff0000;
+  border-color: #fff;
+  background-color: rgba(0,0,0,.5);
+}
 ```
 
 ## Prefix
