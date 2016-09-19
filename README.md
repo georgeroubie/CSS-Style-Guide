@@ -14,6 +14,7 @@
 * Include one space after the `//`.
 * Use comment section to explain what the class does.
 * Comments should always follow by a new line.
+* Hints comments should always appear in the same line with the css properties.
 
 ```scss
 // BAD Example
@@ -24,6 +25,12 @@
 // inputs, buttons and text areas will be displayed in the same line
 
 .inline-form-element { display: inline-block; }
+.btn {
+  
+  &:after {
+    content: '\u450'; // Car Icon
+  }
+}
 ```
 
 ## Syntax
