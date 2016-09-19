@@ -32,7 +32,7 @@
 
 ```scss
 // BAD Example
-// inline form element
+/*inline form element*/
 .inline-form-element {
 }
 
