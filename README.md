@@ -55,6 +55,7 @@
 * Avoid specifying units for zero values, e.g., `padding: 0;` instead of `padding: 0px;`.
 * Prefer `border: 0;` over `border: none;`.
 * Strip out the zero for decimal number, prefer `.9s` over `0.9s`.
+* Parentheses should not be padded with spaces and don't add a space after mixin name.
 
 ```scss
 // Syntax Example
@@ -69,8 +70,10 @@
   display: inline-block;
   background-color: rgba(0,0,0,0.5);
   color: #e0e0e0;
+  @include rotate-element(45deg); // Bad example is: @include rotate-element ( 45deg );
 }
 .btn-warning { color: #ff0000; }
+
 ```
 
 ## Colors
