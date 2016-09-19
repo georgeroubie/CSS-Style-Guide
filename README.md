@@ -128,5 +128,5 @@
 }
 .selector { @include rotate-element(45deg); }
 ```
-
+* Of cource you can use [Autoprefixer](https://github.com/postcss/autoprefixer) for prefixing CSS properties, with grunt or gulp.
 
