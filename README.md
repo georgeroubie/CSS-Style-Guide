@@ -20,6 +20,7 @@
 // BAD Example
 /*inline form element*/
 .inline-form-element { display: inline-block; }
+/*Button Icon*/
 .btn {
   &:after {
     /*Car Icon*/
@@ -31,6 +32,9 @@
 // inputs, buttons and text areas will be displayed in the same line
 
 .inline-form-element { display: inline-block; }
+
+// Add an icon to the end of a button
+
 .btn {
   
   &:after {
