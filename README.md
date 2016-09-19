@@ -36,7 +36,6 @@
 // Add an icon to the end of a button
 
 .btn {
-  
   &:after {
     content: '\u450'; // Car Icon
   }
