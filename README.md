@@ -13,13 +13,13 @@
 * Use `//` insted of `/* */`, if you are using a CSS Preprocessor
 * Use comment section to explain what the class does
 
-```css
-//BAD Example
+```scss
+// BAD Example
 // inline form element
 .inline-form-element{
 }
 
-//GOOD Example
+// GOOD Example
 // inputs, buttons and text areas will be displayed in the same line
 .inline-form-element{
 }
