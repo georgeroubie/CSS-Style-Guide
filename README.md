@@ -44,9 +44,10 @@
 
 ## Prefix
 
-* For the best possible browser support, you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. Use the follow syntax:
+* For the best possible browser support, you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. The declaration's value must lines up vertically for easy multi-line editing.
 
 ```scss
+// Example
 .selector {
   -webkit-transform: rotate(45deg);
      -moz-transform: rotate(45deg);
