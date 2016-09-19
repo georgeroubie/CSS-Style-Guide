@@ -44,7 +44,7 @@
 
 ## Prefix
 
-* For the best possible browser support, you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. The declaration's value must lines up vertically for easy multi-line editing.
+* For the best possible browser support, you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`, when it's necessary. The declaration's value must lines up vertically for easy multi-line editing.
 
 ```scss
 // Example
