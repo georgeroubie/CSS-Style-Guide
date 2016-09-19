@@ -33,6 +33,10 @@
 * Property declaration should appear on its own line for more accurate error reporting.
 * End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it.
 * In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing.
+* Try to use single `'` quotes instead of double quotes `"`.
+* Avoid specifying units for zero values, e.g., `padding: 0;` instead of `padding: 0px;`.
+* Prefer `border: 0;` over `border: none;`.
+* Strip out the zero for decimal number, prefer `.9s` over `0.9s`.
 
 ```scss
 // Syntax Example
