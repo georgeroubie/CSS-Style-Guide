@@ -4,13 +4,15 @@
 
 ## CSS Pre-Processor
 
-> Pre-processors helpes you write reusable, maintainable and extensible codes in CSS. By using a pre-processor, you increase your productivity, and decrease the amount of code you are writing in a project.
+> CSS pre-processors helpes you write reusable, maintainable and extensible CSS code. You increase your productivity, and decrease the amount of code you are writing in a project.
 
 I prefer Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language.
 
 ## JavaScript Task Runner
 
-I prefer Gulp, Gulp is a tool that helps you out with several tasks when it comes to web development.
+> Task runners literally they just run tasks. You can specify which tasks you want a task runner to perform and it will do all the work for you. 
+
+I prefer Gulp, Gulp is a tool that helps you out with several tasks when it comes to web development (CSS minification, autoprefixing, compiling Sass, JavaScript bundling e.g.).
 
 ## Prefix
 
