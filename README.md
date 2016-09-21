@@ -12,6 +12,25 @@ I prefer Sass, Sass is the most mature, stable, and powerful professional grade 
 
 I prefer Gulp, Gulp is a tool that helps you out with several tasks when it comes to web development.
 
+## Prefix
+
+* I user the [Autoprefixer](https://github.com/postcss/autoprefixer) for prefixing CSS properties.
+
+* In the case that Autoprefixer does not prefix a property (which is not very often), you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. The declaration's value must lines up vertically for easy multi-line editing.
+
+```scss
+// Example
+
+@mixin rotate-element($deg) {
+  -webkit-transform: rotate($deg);
+     -moz-transform: rotate($deg);
+      -ms-transform: rotate($deg);
+       -o-transform: rotate($deg);
+          transform: rotate($deg);
+}
+.selector { @include rotate-element(45deg); }
+```
+
 ## Naming
 
 * Name your CSS Classes and IDs based on what they are, not what they look like.
@@ -110,33 +129,3 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
   background-color: rgba(0,0,0,.5);
 }
 ```
-
-## Prefix
-
-* For the best possible browser support, you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`, when it's necessary. The declaration's value must lines up vertically for easy multi-line editing.
-
-```scss
-// Example
-
-.selector {
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-```
-* If you are using a CSS Preprocessor create a mixin for prefixing:
-
-```scss
-@mixin rotate-element($deg) {
-  -webkit-transform: rotate($deg);
-     -moz-transform: rotate($deg);
-      -ms-transform: rotate($deg);
-       -o-transform: rotate($deg);
-          transform: rotate($deg);
-}
-.selector { @include rotate-element(45deg); }
-```
-* Of cource you can use [Autoprefixer](https://github.com/postcss/autoprefixer) for prefixing CSS properties, with grunt or gulp.
-
