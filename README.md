@@ -4,9 +4,9 @@
 
 ## CSS Pre-Processor
 
-> Pre-processors, with their advanced features, helped to achieve writing reusable, maintainable and extensible codes in CSS. By using a pre-processor, you can easily increase your productivity, and decrease the amount of code you are writing in a project.
+> Pre-processors helpes you write reusable, maintainable and extensible codes in CSS. By using a pre-processor, you increase your productivity, and decrease the amount of code you are writing in a project.
 
-I Prefer Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+I prefer Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
 ## Naming
 
