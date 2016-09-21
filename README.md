@@ -109,10 +109,10 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 ## Colors
 
-* Use hex color codes #000 instead of using rgb or name colors.
-* Lowercase all hex values, e.g., #fff. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
-* Use shorthand hex values where available, e.g., #fff instead of #ffffff.
-* Don't include spaces after commas within rgba(), hsla(), or rect() values.
+* Use hex color codes `#000` instead of using rgb or name colors.
+* Lowercase all hex values, e.g., `#fff`. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
+* Use shorthand hex values where available, e.g., `#fff` instead of #ffffff.
+* Don't include spaces after commas within `rgba()`, `hsla()`, or `rect()` values.
 
 ```scss
 // BAD Example
