@@ -2,6 +2,12 @@
 
 > This is the CSS Style Guide that I use, for my own apps.
 
+## CSS Pre-Processor
+
+> Pre-processors, with their advanced features, helped to achieve writing reusable, maintainable and extensible codes in CSS. By using a pre-processor, you can easily increase your productivity, and decrease the amount of code you are writing in a project.
+
+I Prefer Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+
 ## Naming
 
 * Name your CSS Classes and IDs based on what they are, not what they look like.
@@ -10,7 +16,7 @@
 
 ## Comments
 
-* Use `//` insted of `/* */`, if you are using a CSS Preprocessor.
+* Use `//` insted of `/* */`.
 * Include one space after the `//`.
 * Use comment section to explain what the class does.
 * Comments should always follow by a new line.
