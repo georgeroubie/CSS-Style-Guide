@@ -14,7 +14,7 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 ## Prefix
 
-* I user the [Autoprefixer](https://github.com/postcss/autoprefixer) for prefixing CSS properties.
+* I use the [Autoprefixer](https://github.com/postcss/autoprefixer) for prefixing CSS properties.
 
 * In the case that Autoprefixer does not prefix a property (which is not very often), you should prefix css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. The declaration's value must lines up vertically for easy multi-line editing.
 
