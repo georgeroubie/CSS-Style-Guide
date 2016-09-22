@@ -49,8 +49,8 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 * Name your CSS Classes and IDs based on what they are, not what they look like.
 * Use hyphens for CSS Classes `.btn-warning`.
 * Use underscores for CSS IDs `#top_menu`.
-* Use hyphens for variable names `$my-variable`
-* Use hyphens for mixin names `@mixin font-style(){ ... }`
+* Use hyphens for variable names `$my-variable`.
+* Use hyphens for mixin names `@mixin font-style(){ ... }`.
 
 ## Comments
 
@@ -150,6 +150,5 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 Don't bind the same class in both your CSS and JavaScript. Create a JavaScript-specific classes to bind to, prefixed with `.js-`
 
 ```html
-  <a href="js-go-to-top btn">Top</a>
-}
+  <a href="btn js-go-to-top">Top</a>
 ```
