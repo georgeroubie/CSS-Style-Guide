@@ -95,9 +95,9 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 * End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it.
 * Always start a new line for each selector.
 * In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing.
-* Try to use single `'` quotes instead of double quotes `"`.
+* Use single `'` quotes instead of double quotes `"`.
 * Avoid specifying units for zero values, e.g., `padding: 0;` instead of `padding: 0px;`.
-* Prefer `border: 0;` over `border: none;`.
+* Use `border: 0;` over `border: none;`.
 * Strip out the zero for decimal number, prefer `.9s` over `0.9s`.
 * Parentheses should not be padded with spaces and don't add a space after mixin name.
 
@@ -147,7 +147,7 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 ## JavaScript
 
-Avoid binding to the same class in both your CSS and JavaScript. Create a JavaScript-specific classes to bind to, prefixed with `.js-`
+Don't bind the same class in both your CSS and JavaScript. Create a JavaScript-specific classes to bind to, prefixed with `.js-`
 
 ```html
   <a href="js-go-to-top btn">Top</a>
