@@ -21,7 +21,17 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 * In the case that Autoprefixer does not prefix a property (which is not very often), you should prefix your css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. The declaration's value must lines up vertically for easy multi-line editing.
 
 ```scss
-// Example
+// BAD Example
+
+@mixin rotate-element($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+// GOOD Example
 
 @mixin rotate-element($deg) {
   -webkit-transform: rotate($deg);
@@ -31,6 +41,7 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
           transform: rotate($deg);
 }
 .selector { @include rotate-element(45deg); }
+
 ```
 
 ## Naming
