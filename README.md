@@ -161,5 +161,5 @@ Do not nest selectors more than three levels deep. When selectors become this lo
 Don't bind the same class in both your CSS and JavaScript. Create a JavaScript-specific class prefixed with `.js-`
 
 ```html
-  <a href="btn js-go-to-top">Top</a>
+  <a href="#" class="btn js-go-to-top">Top</a>
 ```
