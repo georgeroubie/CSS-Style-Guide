@@ -150,9 +150,11 @@ Do not nest selectors more than three levels deep. When selectors become this lo
 * Strongly coupled to the HTML
 * Not reusable
 
-## IDs
+## Selectors
 
-Don't use IDs in your HTML. ID selectors introduce an unnecessarily high level of specificity to your rule declarations, and they are not reusable.
+* Always use Classes.
+* Don't use IDs in your HTML. ID selectors introduce an unnecessarily high level of specificity to your rule declarations, and they are not reusable.
+* Don't use element name selector `.btn > span` or `.btn > span.icon`.
 
 ## JavaScript
 
