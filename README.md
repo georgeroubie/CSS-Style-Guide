@@ -46,9 +46,8 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 ## Naming
 
-* Name your CSS Classes and IDs based on what they are, not what they look like.
+* Name your CSS Classes based on what they are, not what they look like.
 * Use hyphens for CSS Classes `.btn-warning`.
-* Use underscores for CSS IDs `#top_menu`.
 * Use hyphens for variable names `$my-variable`.
 * Use hyphens for mixin names `@mixin font-style(){ ... }`.
 
@@ -144,6 +143,16 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
   background-color: rgba(0,0,0,.5);
 }
 ```
+
+## Nesting
+
+Do not nest selectors more than three levels deep. When selectors become this long, you're writing CSS that is:
+* Strongly coupled to the HTML
+* Not reusable
+
+## IDs
+
+Don't use IDs in your HTML. ID selectors introduce an unnecessarily high level of specificity to your rule declarations, and they are not reusable.
 
 ## JavaScript
 
