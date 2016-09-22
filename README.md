@@ -147,7 +147,7 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 ## JavaScript
 
-Don't bind the same class in both your CSS and JavaScript. Create a JavaScript-specific classes to bind to, prefixed with `.js-`
+Don't bind the same class in both your CSS and JavaScript. Create a JavaScript-specific class prefixed with `.js-`
 
 ```html
   <a href="btn js-go-to-top">Top</a>
