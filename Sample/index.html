@@ -25,6 +25,151 @@
                     </a>
                 </p>
             </div>
+<!-- Start:Read me file converted to html with this: http://dillinger.io -->
+<h2><a id="CSS_PreProcessor_4"></a>CSS Pre-Processor</h2>
+<blockquote>
+<p>CSS pre-processors helpes you write reusable, maintainable and extensible CSS code. You increase your productivity, and decrease the amount of code you are writing in a project.</p>
+</blockquote>
+<p>I prefer Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language.</p>
+<h2><a id="JavaScript_Task_Runner_10"></a>JavaScript Task Runner</h2>
+<blockquote>
+<p>Task runners literally they just run tasks. You can specify which tasks you want a task runner to perform and it will do all the work for you.</p>
+</blockquote>
+<p>I prefer Gulp, Gulp is a tool that helps you out with several tasks when it comes to web development (CSS minification, autoprefixing, compiling Sass, JavaScript bundling e.g.).</p>
+<h2><a id="Prefix_16"></a>Prefix</h2>
+<ul>
+<li>
+<p>I use the <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> for prefixing CSS properties.</p>
+</li>
+<li>
+<p>In the case that Autoprefixer does not prefix a property (which is not very often), you should prefix your css properties with <code>-webkit-</code>, <code>-moz-</code>, <code>-ms-</code> and <code>-o-</code>. The declaration’s value must lines up vertically for easy multi-line editing.</p>
+</li>
+</ul>
+<pre><code class="language-scss"><span class="hljs-comment">// BAD Example</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">mixin</span><span class="hljs-preprocessor"> rotate-element</span>(<span class="hljs-variable">$deg</span>) {</span>
+  -webkit-<span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+  -moz-<span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+  -ms-<span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+  -o-<span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+  <span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+}
+
+<span class="hljs-comment">// GOOD Example</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">mixin</span><span class="hljs-preprocessor"> rotate-element</span>(<span class="hljs-variable">$deg</span>) {</span>
+  -webkit-<span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+     -moz-<span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+      -ms-<span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+       -o-<span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+          <span class="hljs-attribute">transform</span><span class="hljs-value">: <span class="hljs-function">rotate</span>(<span class="hljs-variable">$deg</span>);</span>
+}
+<span class="hljs-class">.selector</span> { <span class="hljs-at_rule">@<span class="hljs-keyword">include</span><span class="hljs-preprocessor"> rotate-element</span>(<span class="hljs-number">45deg</span>);</span> }
+
+</code></pre>
+<h2><a id="Naming_44"></a>Naming</h2>
+<ul>
+<li>Name your CSS Classes based on what they are, not what they look like.</li>
+<li>Use hyphens for CSS Classes <code>.btn-warning</code>.</li>
+<li>Use hyphens for variable names <code>$my-variable</code>.</li>
+<li>Use hyphens for mixin names <code>@mixin font-style(){ ... }</code>.</li>
+</ul>
+<h2><a id="Comments_51"></a>Comments</h2>
+<ul>
+<li>Use <code>//</code> insted of <code>/* */</code>.</li>
+<li>Include one space after the <code>//</code>.</li>
+<li>Use comment section to explain what the class does.</li>
+<li>Hints comments should always appear in the same line with the css properties.</li>
+</ul>
+<pre><code class="language-scss"><span class="hljs-comment">// BAD Example</span>
+<span class="hljs-comment">/*inline form element*/</span>
+<span class="hljs-class">.inline-form-element</span> { <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span> }
+<span class="hljs-comment">/*Button Icon*/</span>
+<span class="hljs-class">.btn</span> {
+  &amp;<span class="hljs-pseudo">:after</span> {
+    <span class="hljs-comment">/*Car Icon*/</span>
+    <span class="hljs-attribute">content</span><span class="hljs-value">: <span class="hljs-string">'\u450'</span>;</span>
+  }
+}
+
+<span class="hljs-comment">// GOOD Example</span>
+<span class="hljs-comment">// inputs, buttons and text areas will be displayed in the same line</span>
+<span class="hljs-class">.inline-form-element</span> { <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span> }
+
+<span class="hljs-comment">// Add an icon to the end of a button</span>
+<span class="hljs-class">.btn</span> {
+  &amp;<span class="hljs-pseudo">:after</span> {
+    <span class="hljs-attribute">content</span><span class="hljs-value">: <span class="hljs-string">'\u450'</span>;</span> <span class="hljs-comment">// Car Icon</span>
+  }
+}
+</code></pre>
+<h2><a id="Syntax_82"></a>Syntax</h2>
+<ul>
+<li>Include one space before the opening brace <code>{</code> in rule declarations.</li>
+<li>Include one space after the colon <code>:</code> in property declarations.</li>
+<li>Include one space after comma <code>,</code>.</li>
+<li>Property declaration should appear on its own line for more accurate error reporting.</li>
+<li>End all properties declarations with a semi-colon. The last property declaration is optional, but your code is more error prone without it.</li>
+<li>Always start a new line for each selector.</li>
+<li>In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing.</li>
+<li>Use single <code>'</code> quotes instead of double quotes <code>&quot;</code>.</li>
+<li>Avoid specifying units for zero values, e.g., <code>padding: 0;</code> instead of <code>padding: 0px;</code>.</li>
+<li>Use <code>border: 0;</code> over <code>border: none;</code>.</li>
+<li>Strip out the zero for decimal number, prefer <code>.9s</code> over <code>0.9s</code>.</li>
+<li>Parentheses should not be padded with spaces and don’t add a space after mixin name.</li>
+</ul>
+<pre><code class="language-scss"><span class="hljs-comment">// Syntax Example</span>
+<span class="hljs-class">.btn</span>,
+<span class="hljs-class">.btn</span><span class="hljs-class">.default</span> {
+  <span class="hljs-attribute">margin</span><span class="hljs-value">: <span class="hljs-number">0</span>;</span>
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">0</span>;</span>
+  <span class="hljs-attribute">border</span><span class="hljs-value">: <span class="hljs-number">0</span>;</span>
+}
+<span class="hljs-class">.btn</span><span class="hljs-attr_selector">[type='submit']</span> {
+  <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span>
+  <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.5</span>);</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#e0e0e0</span>;</span>
+  <span class="hljs-at_rule">@<span class="hljs-keyword">include</span><span class="hljs-preprocessor"> rotate-element</span>(<span class="hljs-number">45deg</span>);</span> <span class="hljs-comment">// Bad example is: @include rotate-element ( 45deg );</span>
+}
+<span class="hljs-class">.btn-warning</span> { <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#ff0000</span>;</span> }
+
+</code></pre>
+<h2><a id="Colors_115"></a>Colors</h2>
+<ul>
+<li>Use hex color codes <code>#000</code> instead of using rgb or name colors.</li>
+<li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
+<li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of #ffffff.</li>
+<li>Don’t include spaces after commas within <code>rgba()</code>, <code>hsla()</code>, or <code>rect()</code> values.</li>
+</ul>
+<pre><code class="language-scss"><span class="hljs-comment">// BAD Example</span>
+<span class="hljs-class">.btn-warning</span> {
+  <span class="hljs-attribute">color</span><span class="hljs-value">: red;</span>
+  <span class="hljs-attribute">border-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#FFFFFF</span>;</span>
+  <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>);</span>
+}
+
+<span class="hljs-comment">// GOOD Example</span>
+<span class="hljs-class">.btn-warning</span> {
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#ff0000</span>;</span>
+  <span class="hljs-attribute">border-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#fff</span>;</span>
+  <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,.<span class="hljs-number">5</span>);</span>
+}
+</code></pre>
+<h2><a id="Nesting_138"></a>Nesting</h2>
+<p>Do not nest selectors more than three levels deep. When selectors become this long, you’re writing CSS that is:</p>
+<ul>
+<li>Strongly coupled to the HTML</li>
+<li>Not reusable</li>
+</ul>
+<h2><a id="Selectors_144"></a>Selectors</h2>
+<ul>
+<li>Always use Classes.</li>
+<li>Don’t use IDs. ID selectors introduce an unnecessarily high level of specificity to your rule declarations, and they are not reusable.</li>
+<li>Don’t use element name selector <code>.btn &gt; span</code> or <code>.btn &gt; span.icon</code>.</li>
+</ul>
+<h2><a id="JavaScript_150"></a>JavaScript</h2>
+<p>Don’t bind the same class in both your CSS and JavaScript. Create a JavaScript-specific class prefixed with <code>.js-</code></p>
+<pre><code class="language-html">  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn js-go-to-top"</span>&gt;</span>Top<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<!-- End -->
         </div>
     </body>
 </html>
