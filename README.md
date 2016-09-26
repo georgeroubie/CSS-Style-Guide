@@ -22,7 +22,6 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 ```scss
 // BAD Example
-
 @mixin rotate-element($deg) {
   -webkit-transform: rotate($deg);
   -moz-transform: rotate($deg);
@@ -32,7 +31,6 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 }
 
 // GOOD Example
-
 @mixin rotate-element($deg) {
   -webkit-transform: rotate($deg);
      -moz-transform: rotate($deg);
@@ -56,7 +54,6 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 * Use `//` insted of `/* */`.
 * Include one space after the `//`.
 * Use comment section to explain what the class does.
-* Comments should always follow by a new line.
 * Hints comments should always appear in the same line with the css properties.
 
 ```scss
@@ -73,11 +70,9 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 // GOOD Example
 // inputs, buttons and text areas will be displayed in the same line
-
 .inline-form-element { display: inline-block; }
 
 // Add an icon to the end of a button
-
 .btn {
   &:after {
     content: '\u450'; // Car Icon
@@ -102,7 +97,6 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 ```scss
 // Syntax Example
-
 .btn,
 .btn.default {
   margin: 0;
@@ -128,7 +122,6 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 ```scss
 // BAD Example
-
 .btn-warning {
   color: red;
   border-color: #FFFFFF;
@@ -136,7 +129,6 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 }
 
 // GOOD Example
-
 .btn-warning {
   color: #ff0000;
   border-color: #fff;
