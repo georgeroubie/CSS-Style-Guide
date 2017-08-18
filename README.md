@@ -119,6 +119,7 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 * Lowercase all hex values, e.g., `#fff`. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
 * Use shorthand hex values where available, e.g., `#fff` instead of #ffffff.
 * Don't include spaces after commas within `rgba()`, `hsla()`, or `rect()` values.
+* Name your color variables with a tool like [this](http://chir.ag/projects/name-that-color).
 
 ```scss
 // BAD Example
