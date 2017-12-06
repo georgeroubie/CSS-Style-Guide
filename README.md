@@ -46,7 +46,7 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 
 * Name your CSS Classes based on what they are, not what they look like.
 * Use hyphens for CSS Classes `.btn-warning`.
-* Use hyphens for variable names `$my-variable`.
+* Camel case variable names `$myVariable`.
 * Use hyphens for mixin names `@mixin font-style(){ ... }`.
 
 ## Color naming
