@@ -49,6 +49,10 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 * Use hyphens for variable names `$my-variable`.
 * Use hyphens for mixin names `@mixin font-style(){ ... }`.
 
+## Color naming
+
+* Name your color variables with this tool: http://chir.ag/projects/name-that-color
+
 ## Comments
 
 * Use `//` insted of `/* */`.
