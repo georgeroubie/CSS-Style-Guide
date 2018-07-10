@@ -1,22 +1,22 @@
 # CSS Style Guide
 
-> This is the CSS Style Guide that I use, for my own apps.
+> This is the CSS Style Guide that I created and the Web Development Team of [SiEBEN](http://www.sieben.solutions/) uses in every Front-End Project.
 
 ## CSS Pre-Processor
 
 > CSS pre-processors helpes you write reusable, maintainable and extensible CSS code. You increase your productivity, and decrease the amount of code you are writing in a project.
 
-I prefer Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language.
+Sass is the most mature, stable, and powerful professional grade CSS extension language.
 
 ## JavaScript Task Runner
 
 > Task runners literally they just run tasks. You can specify which tasks you want a task runner to perform and it will do all the work for you. 
 
-I prefer Gulp, Gulp is a tool that helps you out with several tasks when it comes to web development (CSS minification, autoprefixing, compiling Sass, JavaScript bundling e.g.).
+Gulp is a tool that helps you out with several tasks when it comes to web development (CSS minification, autoprefixing, compiling Sass, JavaScript bundling e.g.).
 
 ## Prefix
 
-* I use the [Autoprefixer](https://github.com/postcss/autoprefixer) for prefixing CSS properties.
+* Use the [Autoprefixer](https://github.com/postcss/autoprefixer) for prefixing CSS properties.
 
 * In the case that Autoprefixer does not prefix a property (which is not very often), you should prefix your css properties with `-webkit-`, `-moz-`, `-ms-` and `-o-`. The declaration's value must lines up vertically for easy multi-line editing.
 
@@ -123,7 +123,6 @@ I prefer Gulp, Gulp is a tool that helps you out with several tasks when it come
 * Lowercase all hex values, e.g., `#fff`. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
 * Use shorthand hex values where available, e.g., `#fff` instead of #ffffff.
 * Don't include spaces after commas within `rgba()`, `hsla()`, or `rect()` values.
-* Name your color variables with a tool like [this](http://chir.ag/projects/name-that-color).
 
 ```scss
 // BAD Example
