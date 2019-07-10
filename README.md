@@ -1,6 +1,6 @@
 # CSS Style Guide
 
-> This is the CSS Style Guide that I created for the Web Development Team of [SiEBEN](http://www.sieben.solutions/), in order to use it in every Front-End Project.
+> This is the CSS Style Guide that I created for the Frond-End Dept. of [Pobuca](https://pobuca.com), in order to use it in every Front-End Project.
 
 ## CSS Pre-Processor
 
