@@ -1,12 +1,12 @@
 # CSS Style Guide
 
-> This is the CSS Style Guide that I created for the Frond-End Dept. of [Pobuca](https://pobuca.com), in order to use it in every Front-End Project.
+> This is the CSS Style Guide that [Pobuca](https://pobuca.com) uses in every Front-End Project.
 
 ## CSS Pre-Processor
 
 > CSS pre-processors helpes you write reusable, maintainable and extensible CSS code. You increase your productivity, and decrease the amount of code you are writing in a project.
 
-Sass is the most mature, stable, and powerful professional grade CSS extension language.
+SCSS is the most mature, stable, and powerful professional grade CSS extension language.
 
 ## JavaScript Task Runner
 
@@ -86,6 +86,7 @@ Gulp is a tool that helps you out with several tasks when it comes to web develo
 
 ## Syntax
 
+* Use REM instead of Pixels for font size.
 * Include one space before the opening brace `{` in rule declarations.
 * Include one space after the colon `:` in property declarations.
 * Include one space after comma `,`.
