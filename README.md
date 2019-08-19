@@ -1,7 +1,7 @@
 # CSS Style Guide
 > This is the CSS Style Guide that [Pobuca](https://www.pobuca.com) uses in every Front-End Project.    
 
-This file also comes with a `.stylelintrc`. If a rule is not cover by this file will be in <font color='red'>red</font> color.
+This file also comes with a `.stylelintrc`.
 
 # CSS Pre-Processor
 > CSS pre-processors helps you write reusable, maintainable and extensible CSS code. You increase your productivity, and decrease the amount of code you are writing in a project.
@@ -398,24 +398,18 @@ a {
 }
 ```
 
-### SCSS variables
- - <font color='red'>SCSS variable names must follow this pattern: `/^[a-z0-9]+(-[a-z0-9]+)*$/`. Only lowercase letters, numbers and hyphens.</font>
+### SCSS variables, mixins and placeholders
+ - SCSS variables, mixins and placeholders must follow this pattern: `/^[a-z0-9]+(-[a-z0-9]+)*$/`. Only lowercase letters, numbers and hyphens.
 ```scss
 // Violation
 $myVariable: #000;
+@mixin fontStyle() { }
+%resetInput { }
 
 // Not violation
 $my-variable: #000;
-```
-
-### SCSS mixins
- - <font color='red'>SCSS mixin names must follow this pattern: `/^[a-z0-9]+(-[a-z0-9]+)*$/`. Only lowercase letters, numbers and hyphens.</font>
-```scss
-// Violation
-@mixin fontStyle() { }
-
-// Not violation
 @mixin font-style() { }
+%reset-input { }
 ```
 
 ### Property
