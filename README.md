@@ -1,7 +1,7 @@
 # CSS Style Guide
 > This is the CSS Style Guide that [Pobuca](https://www.pobuca.com) uses in every Front-End Project.    
 
-This file also comes with a `.stylelintrc`.
+This file also comes with a `.stylelintrc` and a `.stylelintignore`.
 
 # CSS Pre-Processor
 > CSS pre-processors helps you write reusable, maintainable and extensible CSS code. You increase your productivity, and decrease the amount of code you are writing in a project.
