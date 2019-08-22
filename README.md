@@ -357,16 +357,16 @@ a {
 ```
 
 ### Number
- - Limit the number of decimal places allowed in numbers to `2`.
+ - Limit the number of decimal places allowed in numbers to `3`.
 ```scss
 // Violation
 .btn {
-    font-size: 30.654px;
+    font-size: 30.6751px;
 }
 
 // Not violation
 .btn {
-    font-size: 30.65px;
+    font-size: 30.675px;
 }
 ```
 
