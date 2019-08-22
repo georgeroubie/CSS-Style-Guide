@@ -59,7 +59,7 @@
 
 		"keyframes-name-pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
 
-		"number-max-precision": 2,
+		"number-max-precision": 3,
 
 		"shorthand-property-no-redundant-values": true,
 
